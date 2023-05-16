@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="card">
+        <view class="left">
+            <text class="expenditure">支出</text>
+            <text class="expenditure-total">120343.09</text>
+            <text class="income">收入</text>
+            <text class="income-total">2343.23</text>
+        </view>
+        <view class="right">
+            <view class="month-tag">
+                <text class="month-number">4</text>
+                <text class="month-text">月</text>
+            </view>
+            <view class="ledger">
+                <text class="ledger-name">默认账本</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="detail-list">
+    
+    </view>
+</view>

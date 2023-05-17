@@ -18,6 +18,20 @@
     </view>
 
     <view class="detail-list">
-    
+        <view class="detail-item">
+            <view class="detail-item-header">
+                <text>04月07日 星期一</text>
+                <view class="income_and_expenditure">
+                    <text>收入: 10.30</text>
+                    <text>支出: 3232.83</text>
+                </view>
+            </view>
+            <view class="detail-item-body">
+                <view>
+                    <text>早餐</text>
+                </view>
+                <text>-33</text>
+            </view>
+        </view>
     </view>
 </view>

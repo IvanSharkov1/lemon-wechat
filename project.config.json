@@ -1,29 +1,29 @@
 {
-    "appid": "wx400fa677ed157f93",
-    "compileType": "miniprogram",
-    "libVersion": "2.32.0",
-    "packOptions": {
-        "ignore": [],
-        "include": []
+  "appid": "wx400fa677ed157f93",
+  "compileType": "miniprogram",
+  "libVersion": "2.32.0",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "coverView": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmRelationList": [],
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
     },
-    "setting": {
-        "coverView": true,
-        "es6": true,
-        "postcss": true,
-        "minified": true,
-        "enhance": true,
-        "showShadowRootInWxmlPanel": true,
-        "packNpmRelationList": [],
-        "babelSetting": {
-            "ignore": [],
-            "disablePlugins": [],
-            "outputPath": ""
-        },
-        "condition": false
-    },
-    "condition": {},
-    "editorSetting": {
-        "tabIndent": "insertSpaces",
-        "tabSize": 4
-    }
+    "condition": false
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }

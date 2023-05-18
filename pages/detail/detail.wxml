@@ -33,6 +33,27 @@
                 </view>
                 <text>-33</text>
             </view>
+            <view class="detail-item-body">
+                <view class="icon">
+                    <text class="icon-gouwuche"></text>
+                    <text>早餐</text>
+                </view>
+                <text>-33</text>
+            </view>
+            <view class="detail-item-body">
+                <view class="icon">
+                    <text class="icon-gouwuche"></text>
+                    <text>早餐</text>
+                </view>
+                <text>-33</text>
+            </view>
+            <view class="detail-item-body">
+                <view class="icon">
+                    <text class="icon-gouwuche"></text>
+                    <text>早餐</text>
+                </view>
+                <text>-33</text>
+            </view>
         </view>
     </view>
 </view>

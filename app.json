@@ -1,7 +1,7 @@
 {
     "pages": [
-        "pages/detail/detail",
-        "pages/index/index"
+        "pages/chart/chart",
+        "pages/detail/detail"
     ],
     "window": {
         "backgroundTextStyle": "light",

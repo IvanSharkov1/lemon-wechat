@@ -27,7 +27,8 @@
                 </view>
             </view>
             <view class="detail-item-body">
-                <view>
+                <view class="icon">
+                    <text class="icon-gouwuche"></text>
                     <text>早餐</text>
                 </view>
                 <text>-33</text>

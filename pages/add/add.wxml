@@ -1,0 +1,15 @@
+<view class="tabs">
+  <view class="tab">
+    <text class="active">支出</text>
+    <text class="">收入</text>
+  </view>
+</view>
+
+<view class="icons">
+  <view class="icon">
+    <view class="image">
+      <image src="" mode="" />
+    </view>
+    <text class="name">游戏</text>
+  </view>
+</view>

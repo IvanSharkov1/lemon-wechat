@@ -1,0 +1,37 @@
+.tabs {
+  display: flex;
+  color: #454545;
+  font-size: 32rpx;
+  justify-content: center;
+  margin-top: 24rpx;
+}
+
+.tab text {
+  display: inline-block;
+  padding: 8rpx 36rpx;
+  border: 2rpx solid #0AB27D;
+}
+
+.tab text:first-child {
+  border-radius: 16rpx 0 0 16rpx;
+}
+
+.tab text:last-child {
+  border-radius: 0 16rpx 16rpx 0;
+}
+
+.tab text:nth-child(n+2) {
+  border-left: none;
+}
+
+.tab .active {
+  background-color: #0AB27D;
+  color: #fff;
+}
+
+.icons {
+  margin-top: 24rpx;
+  background-color: #FAFAFA;
+  border-radius: 48rpx 48rpx 0 0;
+}
+

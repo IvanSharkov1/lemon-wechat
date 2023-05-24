@@ -5,11 +5,26 @@
       <text class="">收入</text>
     </view>
   </view>
-  <view class="icons">
+
+  <view class="icon-list">
     <view class="icon">
-      <view class="image">
-        <text class="iconfont icon-hongbao"></text>
-      </view>
+      <text class="iconfont icon-hongbao"></text>
+      <text class="name">游戏</text>
+    </view>
+    <view class="icon">
+      <text class="iconfont icon-hongbao"></text>
+      <text class="name">游戏</text>
+    </view>
+    <view class="icon">
+      <text class="iconfont icon-hongbao"></text>
+      <text class="name">游戏</text>
+    </view>
+    <view class="icon">
+      <text class="iconfont icon-hongbao"></text>
+      <text class="name">游戏</text>
+    </view>
+    <view class="icon">
+      <text class="iconfont icon-hongbao"></text>
       <text class="name">游戏</text>
     </view>
   </view>

@@ -1,11 +1,11 @@
-<view class="container">
-  <view class="tabs">
-    <view class="tab">
-      <text class="active">支出</text>
-      <text class="">收入</text>
-    </view>
+<view class="tabs">
+  <view class="tab">
+    <text class="active">支出</text>
+    <text class="">收入</text>
   </view>
+</view>
 
+<view class="body">
   <view class="icon-list">
     <view class="icon">
       <text class="iconfont icon-hongbao"></text>

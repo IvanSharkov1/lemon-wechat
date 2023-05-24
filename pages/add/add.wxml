@@ -8,7 +8,7 @@
   <view class="icons">
     <view class="icon">
       <view class="image">
-        <image src="" mode="" />
+        <text class="iconfont icon-hongbao"></text>
       </view>
       <text class="name">游戏</text>
     </view>

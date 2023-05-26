@@ -7,25 +7,9 @@
 
 <view class="body">
   <view class="icon-list">
-    <view class="icon">
-      <text class="iconfont icon-hongbao"></text>
-      <text class="name">游戏</text>
-    </view>
-    <view class="icon">
-      <text class="iconfont icon-hongbao"></text>
-      <text class="name">游戏</text>
-    </view>
-    <view class="icon">
-      <text class="iconfont icon-hongbao"></text>
-      <text class="name">游戏</text>
-    </view>
-    <view class="icon">
-      <text class="iconfont icon-hongbao"></text>
-      <text class="name">游戏</text>
-    </view>
-    <view class="icon">
-      <text class="iconfont icon-hongbao"></text>
-      <text class="name">游戏</text>
+    <view class="icon" wx:for="{{acctTypes}}" wx:for-item="acctType" wx:key="id">
+      <text class="iconfont icon-{{acctType.icon}}"></text>
+      <text class="name">{{acctType.iconName}}</text>
     </view>
   </view>
 </view>

@@ -1,7 +1,7 @@
 <view class="tabs">
   <view class="tab">
-    <text class="active">支出</text>
-    <text class="">收入</text>
+    <text class="{{type === 2 ? 'active' : ''}}" bind:tap="handleTab" data-type="{{2}}">支出</text>
+    <text class="{{type === 1 ? 'active' : ''}}" bind:tap="handleTab" data-type="{{1}}">收入</text>
   </view>
 </view>
 

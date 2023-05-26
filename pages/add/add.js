@@ -1,6 +1,6 @@
 var query = `
-query AcctTypes($type:Int!){
-  acctTypes(type:$type) {
+query AcctType($type: Int!) {
+  acctTypes(type: $type) {
     id
     sort
     type
@@ -9,13 +9,21 @@ query AcctTypes($type:Int!){
   }
 }
 `
-
 Page({
   data: {
     type: 2,
     acctTypes: []
   },
   onLoad: function () {
+    this.requestData(this.data.type)
+  },
+  handleTab: function (event) {
+    this.setData({
+      type: event.currentTarget.dataset.type
+    });
+    this.requestData(this.data.type)
+  },
+  requestData(type) {
     wx.request({
       url: 'http://127.0.0.1:3000/graphql',
       method: 'POST',
@@ -26,7 +34,7 @@ Page({
       data: JSON.stringify({
         query,
         variables: {
-          type: this.data.type
+          type
         }
       }),
       success: (res) => {
@@ -35,5 +43,5 @@ Page({
         })
       }
     })
-  }
+  },
 })

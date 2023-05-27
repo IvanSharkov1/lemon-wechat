@@ -58,3 +58,11 @@
 ## 其他说明
 
 - 欢迎提交 [issues](https://github.com/alexbei/lemon-wechat/issues) ，并填写清楚遇到的问题及原因、环境、复显步骤等。
+
+
+
+## 请作者喝一杯咖啡吧！
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/buy-me-a-coffee/wechat.jpg" alt=logo" width="200" height="200" />
+</p>

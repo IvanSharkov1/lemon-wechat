@@ -45,7 +45,8 @@
 
 ## 联系方式
 
-##### QQ群： <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2Qcv_tL-4hJQJpy8y41cpkx5tM-ENWaO&jump_from=webapi"><img src="https://img.shields.io/badge/%E5%8F%AF%E5%8A%A0-742462745-brightgreen"></a>
+##### QQ群：
+<a href="https://qm.qq.com/cgi-bin/qm/qr?k=2Qcv_tL-4hJQJpy8y41cpkx5tM-ENWaO&jump_from=webapi"><img src="https://img.shields.io/badge/%E5%8F%AF%E5%8A%A0-742462745-brightgreen"></a>
 
 
 

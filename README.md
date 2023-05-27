@@ -62,8 +62,14 @@
 
 
 
+## Star 历史统计
+
+[![Star History Chart](https://api.star-history.com/svg?repos=alexbei/lemon-wechat&type=Date)](https://star-history.com/#alexbei/lemon-wechat&Date)
+
+
+
 ## 请作者喝一杯咖啡吧！
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/buy-me-a-coffee/wechat.jpg" alt=logo" width="200" height="200" />
+    <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/buy-me-a-coffee/wechat.jpg" alt=logo" width="300" height="300" />
 </p>

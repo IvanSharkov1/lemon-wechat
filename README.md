@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/logo/lemon-wechat-logo.png" alt=logo" width="200" height="200" />
+    <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/logo/lemon-wechat-logo.png" alt="logo" width="200" height="200" />
 </p>
 
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">Lemon Wechat (柠檬记账-微信小程序端)</h1>
@@ -40,14 +40,7 @@
 
 
 ## 快速开始
-
-
-
-## 联系方式
-
-##### QQ群：
-<a href="https://qm.qq.com/cgi-bin/qm/qr?k=2Qcv_tL-4hJQJpy8y41cpkx5tM-ENWaO&jump_from=webapi"><img src="https://img.shields.io/badge/%E5%8F%AF%E5%8A%A0-742462745-brightgreen"></a>
-
+TODO
 
 
 ## 关于开源协议
@@ -59,6 +52,16 @@
 ## 其他说明
 
 - 欢迎提交 [issues](https://github.com/alexbei/lemon-wechat/issues) ，并填写清楚遇到的问题及原因、环境、复显步骤等。
+
+
+
+## 联系方式
+
+> 推荐大家加微信群，这样可以更方便的进行沟通交流。
+
+| 微信群(推荐) | QQ群 |
+|:-:|:-:|
+| <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/wechat-group/wechat-group-qr.png" alt="qr" width="150" height="150" /> |  <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2Qcv_tL-4hJQJpy8y41cpkx5tM-ENWaO&jump_from=webapi"><img src="https://img.shields.io/badge/%E5%8F%AF%E5%8A%A0-742462745-brightgreen"></a> |
 
 
 

@@ -55,11 +55,23 @@
 
 .icon-list .icon .iconfont::before {
   display: inline-block;
+  font-size: 50rpx;
+}
+
+.icon-list .icon .iconfont{
+  text-align: center;
+  line-height: 90rpx;
   background-color: #E8E8E8;
   border-radius: 50%;
-  font-size: 60rpx;
-  padding: 16rpx;
+  width: 90rpx;
+  height: 90rpx;
 }
+
+.icon-list .icon .active {
+  background-color: #0AB27D;
+  color: #fff;
+}
+
 
 .icon-list .icon .name {
   margin-top: 8rpx;

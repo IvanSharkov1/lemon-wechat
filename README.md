@@ -73,6 +73,6 @@ TODO
 
 ## 请作者喝一杯咖啡吧！
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/buy-me-a-coffee/wechat.jpg" alt=logo" width="300" height="300" />
-</p>
+| 微信赞赏码 |
+|:-:|
+| <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/buy-me-a-coffee/wechat.jpg" alt="coffee" width="150" height="150" /> |

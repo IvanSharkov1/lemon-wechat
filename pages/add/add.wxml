@@ -7,8 +7,9 @@
 
 <view class="body">
   <view class="icon-list">
-    <view class="icon" wx:for="{{acctTypes}}" wx:for-item="acctType" wx:key="id">
-      <text class="iconfont icon-{{acctType.icon}}"></text>
+    <view class="icon" wx:for="{{acctTypes}}" wx:for-item="acctType" wx:key="id" 
+    bind:tap="handleTab2" data-id="{{acctType.id}}">
+      <text class="iconfont icon-{{acctType.icon}} {{selectedId === acctType.id ? 'active' : ''}}"></text>
       <text class="name">{{acctType.iconName}}</text>
     </view>
   </view>

@@ -69,7 +69,7 @@ TODO
 
 | 微信赞赏码 |
 |:-:|
-| <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/buy-me-a-coffee/wechat.jpg" alt="coffee" width="150" height="150" /> |
+| <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/buy-me-a-coffee/wechat.jpeg" alt="coffee" width="150" height="150" /> |
 
 
 

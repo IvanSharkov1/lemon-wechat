@@ -7,10 +7,90 @@
 
 <view class="body">
   <view class="icon-list">
-    <view class="icon" wx:for="{{acctTypes}}" wx:for-item="acctType" wx:key="id" 
-    bind:tap="handleTab2" data-id="{{acctType.id}}">
+    <view class="icon" wx:for="{{acctTypes}}" wx:for-item="acctType" wx:key="id" bind:tap="handleTab2" data-id="{{acctType.id}}">
       <text class="iconfont icon-{{acctType.icon}} {{selectedId === acctType.id ? 'active' : ''}}"></text>
       <text class="name">{{acctType.iconName}}</text>
     </view>
   </view>
+</view>
+
+<!-- 底部弹窗 -->
+<view class="bottom-popup">
+
+  <view class="money-box">
+    <text class="money">0.00</text>
+    <text class="currency">CNY</text>
+  </view>
+
+  <view class="remark-box">
+    <text class="remark">备注: </text>
+    <input class="remark-input" type="text" placeholder="点此输入备注" />
+  </view>
+
+  <view class="picker-box">
+    <view class="picker-item">
+      <text class="iconfont icon-calendar"></text>
+      <text class="title">今天</text>
+    </view>
+    <view class="picker-item">
+      <text class="iconfont icon-add-image"></text>
+      <text class="title">选择账本</text>
+    </view>
+    <view class="picker-item">
+      <text class="iconfont icon-ledger"></text>
+      <text class="title">添加图片</text>
+    </view>
+  </view>
+
+  <view class="keyboard-box" style="padding-bottom: {{(bottomSafeHeight+10)*2}}rpx;">
+    <view class="keyboard-item">
+      <text>1</text>
+    </view>
+    <view class="keyboard-item">
+      <text>2</text>
+    </view>
+    <view class="keyboard-item">
+      <text>3</text>
+    </view>
+    <view class="keyboard-item">
+      <text class="iconfont icon-btn-delete"></text>
+    </view>
+    <view class="keyboard-item">
+      <text>4</text>
+    </view>
+    <view class="keyboard-item">
+      <text>5</text>
+    </view>
+    <view class="keyboard-item">
+      <text>6</text>
+    </view>
+    <view class="keyboard-item">
+      <text>+</text>
+    </view>
+    <view class="keyboard-item">
+      <text>7</text>
+    </view>
+    <view class="keyboard-item">
+      <text>8</text>
+    </view>
+    <view class="keyboard-item">
+      <text>9</text>
+    </view>
+    <view class="keyboard-item">
+      <text>-</text>
+    </view>
+    <view class="keyboard-item">
+      <text>再记</text>
+    </view>
+    <view class="keyboard-item">
+      <text>0</text>
+    </view>
+    <view class="keyboard-item">
+      <text>.</text>
+    </view>
+    <view class="keyboard-item">
+      <text>保存</text>
+    </view>
+  </view>
+
 </view>

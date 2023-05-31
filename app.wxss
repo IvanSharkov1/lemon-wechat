@@ -1,1 +1,2 @@
-@import './styles/icon.wxss'
+@import './styles/icon.wxss';
+@import './styles/acct-type-icon.wxss';

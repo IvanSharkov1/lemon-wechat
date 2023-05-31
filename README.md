@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/logo/lemon-wechat-logo.png" alt="logo" width="200" height="200" />
+    <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/logo/lemon-logo.png" alt="logo" width="200" height="200" />
 </p>
 
 <h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">Lemon Wechat (柠檬记账-微信小程序端)</h1>

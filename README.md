@@ -2,7 +2,7 @@
     <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/logo/lemon-wechat-logo-round.png" alt="logo" width="200" height="200" />
 </p>
 
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">Lemon Wechat Mini Program</h1>
+<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">Lemon Wechat</h1>
 <h3 align="center">柠檬记账-微信小程序端，让您的记账更简单、更高效、更有趣！</h3>
 <h5 align="center">Lemon Wechat 是一个开源的原生微信小程序，功能多，体验好，采用 GraphQL 和 NestJS 等技术，并且提供全面的项目资料，方便学习。</h5>
 

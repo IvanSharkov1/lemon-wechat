@@ -18,13 +18,13 @@
 <view class="bottom-popup">
 
   <view class="money-box">
-    <text class="money">0.00</text>
+    <text class="money">{{money}}</text>
     <text class="currency">CNY</text>
   </view>
 
   <view class="remark-box">
     <text class="remark">备注: </text>
-    <input class="remark-input" type="text" placeholder="点此输入备注" />
+    <input class="remark-input" type="text" placeholder="点此输入备注" model:value="{{remark}}" />
   </view>
 
   <view class="picker-box">
@@ -43,10 +43,10 @@
   </view>
 
   <view class="keyboard-box" style="padding-bottom: {{(bottomSafeHeight+10)*2}}rpx;">
-    <view class="keyboard-item">
-      <text>1</text>
+    <view wx:for="{{[1, 2 , 3 , 'btn-delete' , 4 , 5 , 6 , '+' , 7 , 8 , 9 , '-' , '再记' , 0 , '.' , '保存' ]}}" wx:for-item="kb" wx:for-index="idx" wx:key="*this" class="keyboard-item" bind:tap="handleKeyboard" data-value="{{kb}}">
+      <text class="{{idx === 3 ? 'iconfont icon-btn-delete':''}}">{{idx !== 3 ? kb:''}}</text>
     </view>
-    <view class="keyboard-item">
+    <!-- <view class="keyboard-item">
       <text>2</text>
     </view>
     <view class="keyboard-item">
@@ -90,7 +90,7 @@
     </view>
     <view class="keyboard-item">
       <text>保存</text>
-    </view>
+    </view> -->
   </view>
 
 </view>

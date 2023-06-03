@@ -1,15 +1,15 @@
 <view class="tabs">
     <view class="tab">
-        <text class="{{type === 2 ? 'active' : ''}}" bind:tap="handleTab" data-type="{{2}}">支出</text>
-        <text class="{{type === 1 ? 'active' : ''}}" bind:tap="handleTab" data-type="{{1}}">收入</text>
+        <text class="{{detailType === 2 ? 'active' : ''}}" bind:tap="handleTab" data-detail-type="{{2}}">支出</text>
+        <text class="{{detailType === 1 ? 'active' : ''}}" bind:tap="handleTab" data-detail-type="{{1}}">收入</text>
     </view>
 </view>
 
 <view class="body">
     <view class="icon-list">
-        <view class="icon" wx:for="{{acctTypes}}" wx:for-item="acctType" wx:key="id" bind:tap="handleTab2" data-id="{{acctType.id}}">
-            <text class="iconfont icon-{{acctType.icon}} {{selectedId === acctType.id ? 'active' : ''}}"></text>
-            <text class="name">{{acctType.iconName}}</text>
+        <view class="icon" wx:for="{{detailCategories}}" wx:for-item="detailCategory" wx:key="id" bind:tap="handleTab2" data-id="{{detailCategory.id}}">
+            <text class="iconfont icon-{{detailCategory.icon}} {{selectedId === detailCategory.id ? 'active' : ''}}"></text>
+            <text class="name">{{detailCategory.iconName}}</text>
         </view>
     </view>
 </view>

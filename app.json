@@ -1,15 +1,17 @@
 {
-  "pages": [
-    "pages/add/add",
-    "pages/chart/chart",
-    "pages/detail/detail"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "柠檬记账",
-    "navigationBarTextStyle": "black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+
+        "pages/add/add",
+        "pages/detail/detail",
+
+        "pages/chart/chart"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "柠檬记账",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }

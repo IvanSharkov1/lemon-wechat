@@ -1,5 +1,5 @@
 import {
-    getAcctTypes
+    detailCategories
 } from './request'
 import {
     Api
@@ -7,34 +7,17 @@ import {
 
 var app = getApp()
 
-
-
-var mutation = `
-mutation AddLedgerDetail($newLedgerDetailData: NewLedgerDetailInput!){
-    addLedgerDetail(
-      newLedgerDetailData: $newLedgerDetailData
-    ) {
-      id
-      acctTypeId
-      amount
-      remark
-      createTime
-      updateTime
-    }
-  }
-`
-
 Page({
     data: {
-        type: 2,
+        detailType: 2,
         selectedId: -1,
-        acctTypes: [],
+        detailCategories: [],
         bottomSafeHeight: 0,
         money: 0,
         remark: "",
     },
     onLoad: function () {
-        getAcctTypes.call(this, this.data.type);
+        detailCategories.call(this, this.data.detailType);
         this.setData({
             bottomSafeHeight: app.globalData.bottomSafeHeight
         });
@@ -42,9 +25,9 @@ Page({
     handleTab: function (event) {
         this.setData({
             selectedId: -1,
-            type: event.currentTarget.dataset.type
+            detailType: event.currentTarget.dataset.detailType
         });
-        getAcctTypes.call(this, this.data.type)
+        detailCategories.call(this, this.data.detailType)
     },
     handleTab2: function (event) {
         this.setData({
@@ -67,7 +50,8 @@ Page({
         }
         if (keyValue === '保存') {
             const saveData = {
-                acctTypeId: this.data.selectedId,
+                detailCategoryId: this.data.selectedId,
+                detailType: this.data.detailType,
                 amount: "123",
                 remark: this.data.remark,
             }
@@ -85,7 +69,8 @@ Page({
                           newLedgerDetailData: $newLedgerDetailData
                         ) {
                           id
-                          acctTypeId
+                          detailCategoryId
+                          detailType
                           amount
                           remark
                           createTime
@@ -94,7 +79,7 @@ Page({
                       }
                     `,
                     variables: {
-                        newLedgerDetailData:{
+                        newLedgerDetailData: {
                             ...saveData
                         }
                     }

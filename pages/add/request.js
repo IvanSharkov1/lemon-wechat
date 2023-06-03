@@ -7,11 +7,11 @@ import {
 } from './operation'
 
 var query = `
-query AcctType($type: Int!) {
-  acctTypes(type: $type) {
+query DetailCategories($detailType: Int!) {
+    detailCategories(detailType: $detailType) {
     id
     sort
-    type
+    detailType
     icon
     iconName
   }
@@ -19,15 +19,16 @@ query AcctType($type: Int!) {
 `
 
 
-async function getAcctTypes(type) {
+async function detailCategories(detailType) {
+
     const res = await Api(query, {
-        type
+        detailType
     })
     this.setData({
-        acctTypes: res.acctTypes.sort((a, b) => a.sort - b.sort)
+        detailCategories: res.detailCategories.sort((a, b) => a.sort - b.sort)
     })
 }
 
 module.exports = {
-    getAcctTypes
+    detailCategories
 }

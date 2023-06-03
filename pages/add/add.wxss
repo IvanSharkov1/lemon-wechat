@@ -1,164 +1,164 @@
 .tabs {
-  display: flex;
-  color: #454545;
-  font-size: 32rpx;
-  justify-content: center;
-  margin-top: 24rpx;
+    display: flex;
+    color: #454545;
+    font-size: 32rpx;
+    justify-content: center;
+    margin-top: 24rpx;
 }
 
 .tab text {
-  display: inline-block;
-  padding: 8rpx 36rpx;
-  border: 2rpx solid #0AB27D;
+    display: inline-block;
+    padding: 8rpx 36rpx;
+    border: 2rpx solid #0AB27D;
 }
 
 .tab text:first-child {
-  border-radius: 16rpx 0 0 16rpx;
+    border-radius: 16rpx 0 0 16rpx;
 }
 
 .tab text:last-child {
-  border-radius: 0 16rpx 16rpx 0;
+    border-radius: 0 16rpx 16rpx 0;
 }
 
 .tab text:nth-child(n+2) {
-  border-left: none;
+    border-left: none;
 }
 
 .tab .active {
-  background-color: #0AB27D;
-  color: #fff;
+    background-color: #0AB27D;
+    color: #fff;
 }
 
 .body {
-  position: absolute;
-  top: 110rpx;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #FAFAFA;
-  border-radius: 48rpx 48rpx 0 0;
-  padding: 48rpx 60rpx;
+    position: absolute;
+    top: 110rpx;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FAFAFA;
+    border-radius: 48rpx 48rpx 0 0;
+    padding: 48rpx 60rpx;
 }
 
 .icon-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 28rpx;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28rpx;
 }
 
 .icon-list .icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #292929;
 }
 
 .icon-list .icon .iconfont::before {
-  display: inline-block;
-  font-size: 50rpx;
+    display: inline-block;
+    font-size: 50rpx;
 }
 
 .icon-list .icon .iconfont {
-  text-align: center;
-  line-height: 90rpx;
-  background-color: #E8E8E8;
-  border-radius: 50%;
-  width: 90rpx;
-  height: 90rpx;
+    text-align: center;
+    line-height: 90rpx;
+    background-color: #E8E8E8;
+    border-radius: 50%;
+    width: 90rpx;
+    height: 90rpx;
 }
 
 .icon-list .icon .active {
-  background-color: #0AB27D;
-  color: #fff;
+    background-color: #0AB27D;
+    color: #fff;
 }
 
 .icon-list .icon .name {
-  margin-top: 8rpx;
-  font-size: 24rpx;
+    margin-top: 8rpx;
+    font-size: 24rpx;
 }
 
 /* 底部弹窗 */
 
 .bottom-popup {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #E8E8E8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E8E8E8;
 }
 
 .money-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 32rpx 20rpx 0;
-  font-size: 28rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32rpx 20rpx 0;
+    font-size: 28rpx;
 }
 
 .money-box .money {
-  color: #E8503A;
-  font-size: 48rpx;
+    color: #E8503A;
+    font-size: 48rpx;
 }
 
 .money-box .currency::after {
-  content: ">";
-  margin-left: 8rpx;
-  display: inline-block;
+    content: ">";
+    margin-left: 8rpx;
+    display: inline-block;
 }
 
 .remark-box {
-  display: flex;
-  align-items: center;
-  margin: 20rpx 20rpx 0;
-  font-size: 28rpx;
-  background-color: #fff;
-  border-radius: 12rpx;
-  padding: 12rpx;
+    display: flex;
+    align-items: center;
+    margin: 20rpx 20rpx 0;
+    font-size: 28rpx;
+    background-color: #fff;
+    border-radius: 12rpx;
+    padding: 12rpx;
 }
 
 .remark-box .remark-input {
-  flex: 1;
-  margin-left: 26rpx;
+    flex: 1;
+    margin-left: 26rpx;
 }
 
 .picker-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 32rpx 20rpx 0;
-  font-size: 28rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32rpx 20rpx 0;
+    font-size: 28rpx;
 }
 
 .picker-item {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .picker-item .iconfont {
-  font-size: 48rpx;
-  font-weight: 500;
+    font-size: 48rpx;
+    font-weight: 500;
 }
 
 .picker-item .title {
-  margin-left: 8rpx;
+    margin-left: 8rpx;
 }
 
 /* 键盘 */
 .keyboard-box {
-  margin: 32rpx 20rpx 0;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20rpx;
-  font-size: 32rpx;
-  font-weight: 500;
+    margin: 32rpx 20rpx 0;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20rpx;
+    font-size: 32rpx;
+    font-weight: 500;
 }
 
 .keyboard-item {
-  background-color: #fff;
-  border-radius: 16rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 92rpx;
+    background-color: #fff;
+    border-radius: 16rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92rpx;
 }

@@ -1,8 +1,10 @@
 import {
-  Api
+    Api
 } from '../../api/index'
 
-import {Add} from './operation'
+import {
+    Add
+} from './operation'
 
 var query = `
 query AcctType($type: Int!) {
@@ -17,15 +19,15 @@ query AcctType($type: Int!) {
 `
 
 
-async function getAcctTypes(type)  {
-  const res = await Api(query, {
-    type
-  })
-  this.setData({
-    acctTypes: res.acctTypes.sort((a, b) => a.sort - b.sort)
-  })
+async function getAcctTypes(type) {
+    const res = await Api(query, {
+        type
+    })
+    this.setData({
+        acctTypes: res.acctTypes.sort((a, b) => a.sort - b.sort)
+    })
 }
 
 module.exports = {
-  getAcctTypes
+    getAcctTypes
 }

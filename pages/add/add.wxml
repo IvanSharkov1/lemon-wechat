@@ -1,96 +1,51 @@
 <view class="tabs">
-  <view class="tab">
-    <text class="{{type === 2 ? 'active' : ''}}" bind:tap="handleTab" data-type="{{2}}">支出</text>
-    <text class="{{type === 1 ? 'active' : ''}}" bind:tap="handleTab" data-type="{{1}}">收入</text>
-  </view>
+    <view class="tab">
+        <text class="{{type === 2 ? 'active' : ''}}" bind:tap="handleTab" data-type="{{2}}">支出</text>
+        <text class="{{type === 1 ? 'active' : ''}}" bind:tap="handleTab" data-type="{{1}}">收入</text>
+    </view>
 </view>
 
 <view class="body">
-  <view class="icon-list">
-    <view class="icon" wx:for="{{acctTypes}}" wx:for-item="acctType" wx:key="id" bind:tap="handleTab2" data-id="{{acctType.id}}">
-      <text class="iconfont icon-{{acctType.icon}} {{selectedId === acctType.id ? 'active' : ''}}"></text>
-      <text class="name">{{acctType.iconName}}</text>
+    <view class="icon-list">
+        <view class="icon" wx:for="{{acctTypes}}" wx:for-item="acctType" wx:key="id" bind:tap="handleTab2" data-id="{{acctType.id}}">
+            <text class="iconfont icon-{{acctType.icon}} {{selectedId === acctType.id ? 'active' : ''}}"></text>
+            <text class="name">{{acctType.iconName}}</text>
+        </view>
     </view>
-  </view>
 </view>
 
 <!-- 底部弹窗 -->
 <view class="bottom-popup">
 
-  <view class="money-box">
-    <text class="money">{{money}}</text>
-    <text class="currency">CNY</text>
-  </view>
+    <view class="money-box">
+        <text class="money">{{money}}</text>
+        <text class="currency">CNY</text>
+    </view>
 
-  <view class="remark-box">
-    <text class="remark">备注: </text>
-    <input class="remark-input" type="text" placeholder="点此输入备注" model:value="{{remark}}" />
-  </view>
+    <view class="remark-box">
+        <text class="remark">备注: </text>
+        <input class="remark-input" type="text" placeholder="点此输入备注" model:value="{{remark}}" />
+    </view>
 
-  <view class="picker-box">
-    <view class="picker-item">
-      <text class="iconfont icon-calendar"></text>
-      <text class="title">今天</text>
+    <view class="picker-box">
+        <view class="picker-item">
+            <text class="iconfont icon-calendar"></text>
+            <text class="title">今天</text>
+        </view>
+        <view class="picker-item">
+            <text class="iconfont icon-add-image"></text>
+            <text class="title">选择账本</text>
+        </view>
+        <view class="picker-item">
+            <text class="iconfont icon-ledger"></text>
+            <text class="title">添加图片</text>
+        </view>
     </view>
-    <view class="picker-item">
-      <text class="iconfont icon-add-image"></text>
-      <text class="title">选择账本</text>
-    </view>
-    <view class="picker-item">
-      <text class="iconfont icon-ledger"></text>
-      <text class="title">添加图片</text>
-    </view>
-  </view>
 
-  <view class="keyboard-box" style="padding-bottom: {{(bottomSafeHeight+10)*2}}rpx;">
-    <view wx:for="{{[1, 2 , 3 , 'btn-delete' , 4 , 5 , 6 , '+' , 7 , 8 , 9 , '-' , '再记' , 0 , '.' , '保存' ]}}" wx:for-item="kb" wx:for-index="idx" wx:key="*this" class="keyboard-item" bind:tap="handleKeyboard" data-value="{{kb}}">
-      <text class="{{idx === 3 ? 'iconfont icon-btn-delete':''}}">{{idx !== 3 ? kb:''}}</text>
+    <view class="keyboard-box" style="padding-bottom: {{(bottomSafeHeight+10)*2}}rpx;">
+        <view wx:for="{{[1, 2 , 3 , 'btn-delete' , 4 , 5 , 6 , '+' , 7 , 8 , 9 , '-' , '再记' , 0 , '.' , '保存' ]}}" wx:for-item="kb" wx:for-index="idx" wx:key="*this" class="keyboard-item" bind:tap="handleKeyboard" data-value="{{kb}}">
+            <text class="{{idx === 3 ? 'iconfont icon-btn-delete':''}}">{{idx !== 3 ? kb:''}}</text>
+        </view>
     </view>
-    <!-- <view class="keyboard-item">
-      <text>2</text>
-    </view>
-    <view class="keyboard-item">
-      <text>3</text>
-    </view>
-    <view class="keyboard-item">
-      <text class="iconfont icon-btn-delete"></text>
-    </view>
-    <view class="keyboard-item">
-      <text>4</text>
-    </view>
-    <view class="keyboard-item">
-      <text>5</text>
-    </view>
-    <view class="keyboard-item">
-      <text>6</text>
-    </view>
-    <view class="keyboard-item">
-      <text>+</text>
-    </view>
-    <view class="keyboard-item">
-      <text>7</text>
-    </view>
-    <view class="keyboard-item">
-      <text>8</text>
-    </view>
-    <view class="keyboard-item">
-      <text>9</text>
-    </view>
-    <view class="keyboard-item">
-      <text>-</text>
-    </view>
-    <view class="keyboard-item">
-      <text>再记</text>
-    </view>
-    <view class="keyboard-item">
-      <text>0</text>
-    </view>
-    <view class="keyboard-item">
-      <text>.</text>
-    </view>
-    <view class="keyboard-item">
-      <text>保存</text>
-    </view> -->
-  </view>
 
 </view>

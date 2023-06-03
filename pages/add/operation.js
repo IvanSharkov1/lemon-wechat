@@ -12,5 +12,5 @@
 
 
  module.exports.Add = {
-  acctTypeQuery
+     acctTypeQuery
  }

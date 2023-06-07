@@ -1,0 +1,91 @@
+<view class="container">
+    <!-- 明细统计展示卡片 -->
+    <view class="card">
+        <!-- 左侧-统计数据 -->
+        <view class="statistics">
+            <!-- 支出 -->
+            <view class="expenditure">
+                <text class="name">支出</text>
+                <block wx:for="{{detailCard}}" wx:key="*this">
+                    <text class="amount" wx:if="{{item.detailType === 2}}">{{item.detailType === 2 ? item.amountSum : 0}}</text>
+                </block>
+            </view>
+            <!-- 收入 -->
+            <view class="income">
+                <text class="name">收入</text>
+                <block wx:for="{{detailCard}}" wx:key="*this">
+                    <text class="amount" wx:if="{{item.detailType === 1}}">{{item.detailType === 1 ? item.amountSum : 0}}</text>
+                </block>
+            </view>
+        </view>
+        <!-- 右侧-月份和账本 -->
+        <view class="month-ledger">
+            <!-- 月份 -->
+            <view class="month">
+                <view class="background">
+                    <text class="number">{{detailCard[0].createMonth}}</text>
+                    <text class="name">月</text>
+                </view>
+            </view>
+            <!-- 账本 -->
+            <view class="ledger">
+                <text class="name">默认账本</text>
+            </view>
+        </view>
+    </view>
+    <!-- 明细列表 -->
+    <view class="detail-list">
+        <!-- 列表 -->
+        <block wx:for="{{detailList}}" wx:key="*this">
+            <view class="item">
+                <!-- 头部 -->
+                <view class="header">
+                    <!-- 日期 -->
+                    <view class="date">
+                        <text>{{item.dateNumber}}</text>
+                        <text>{{item.createWeekDay}}</text>
+                    </view>
+                    <!-- 统计数据 -->
+                    <view class="statistics">
+                        <!-- 收入 -->
+                        <block wx:for="{{item.detailTypes}}" wx:key="*this">
+                            <block wx:if="{{item.detailType === 1}}">
+                                <view class="income">
+                                    <text>收入</text>
+                                    <text>{{item.amountSum}}</text>
+                                </view>
+                            </block>
+                            <!-- 支出 -->
+                            <block wx:if="{{item.detailType === 2}}">
+                                <view class="expenditure">
+                                    <text>支出</text>
+                                    <text>{{item.amountSum}}</text>
+                                </view>
+                            </block>
+                        </block>
+                    </view>
+                </view>
+                <!-- 主体 -->
+                <view class="body">
+                    <!-- 列表 -->
+                    <block wx:for="{{item.ledgerDetails}}" wx:key="*this">
+                        <view class="item">
+                            <view class="icon">
+                                <text class="iconfont icon-{{item.detailCategory.icon}}"></text>
+                            </view>
+                            <view class="content">
+                                <view class="name">
+                                    <text class="icon-name">{{item.detailCategory.iconName}}</text>
+                                    <text class="remark">{{item.remark}}</text>
+                                </view>
+                                <text class="amount">{{item.amount}}</text>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </block>
+
+    </view>
+
+</view>

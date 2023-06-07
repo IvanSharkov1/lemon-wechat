@@ -27,6 +27,13 @@ function Api(query, variables) {
     });
 }
 
+query DetailCard($createMonth: Int!) {
+    detailCard(createMonth: $createMonth) {
+        createMonth
+        detailType
+        amountSum
+    }
+}
 module.exports = {
     Api
 }

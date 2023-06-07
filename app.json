@@ -1,9 +1,7 @@
 {
     "pages": [
-
-        "pages/add/add",
         "pages/detail/detail",
-
+        "pages/add/add",
         "pages/chart/chart"
     ],
     "window": {

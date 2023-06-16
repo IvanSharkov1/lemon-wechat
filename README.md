@@ -57,11 +57,9 @@ TODO
 
 ## 联系方式
 
-> 推荐大家加入 **微信群** ，更方便的进行交流。
-
-| 微信群(推荐) | QQ群 |
-|:-:|:-:|
-| <img src="https://raw.githubusercontent.com/alexbei/lemon-docs/main/images/group-qr/wechat-group-qr.png" alt="qr" width="150" height="150" /> |  <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2Qcv_tL-4hJQJpy8y41cpkx5tM-ENWaO&jump_from=webapi"><img src="https://img.shields.io/badge/%E5%8F%AF%E5%8A%A0-742462745-brightgreen"></a> |
+| QQ群 |
+|:-:|
+|  <a href="https://qm.qq.com/cgi-bin/qm/qr?k=2Qcv_tL-4hJQJpy8y41cpkx5tM-ENWaO&jump_from=webapi"><img src="https://img.shields.io/badge/%E5%8F%AF%E5%8A%A0-742462745-brightgreen"></a> |
 
 
 
